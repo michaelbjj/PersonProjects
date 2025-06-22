@@ -15,7 +15,7 @@ def converter():
         messagebox.showerror("Erro", "Digite um valor numérico válido.")
         return
 
-    url = f"https://v6.exchangerate-api.com/v6/{chave_api}/pair/{de}/{para}/{valor}"
+    url = f"https://v6.exchangerate-api.com/v6/{chave_api}/pair/{de}/{para}/{valor}" 
     resposta = requests.get(url)
 
     if resposta.status_code != 200:

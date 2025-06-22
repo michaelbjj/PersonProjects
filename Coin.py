@@ -9,7 +9,7 @@ def converter_moeda(valor, de, para, chave_api):
     resposta = requests.get(url)
 
     if resposta.status_code != 200:
-        return "Erro ao acessar a API."
+        return "Erro ao acessar a API." 
 
     dados = resposta.json()
 
