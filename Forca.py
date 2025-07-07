@@ -19,7 +19,7 @@ def jogar_forca():
             print("Digite apenas uma letra!")
             continue
 
-        if letra in letras_acertadas or letra in letras_erradas:
+        if ((letra in letras_acertadas) or (letra in letras_erradas)):
             print("Você já tentou essa letra.")
             continue
 
